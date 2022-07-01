@@ -1,0 +1,32 @@
+.benefit {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.benefit__list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.benefit__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.benefit__icon {
+  fill: #212121;
+  width: 70px;
+  height: 60px;
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
