@@ -1,3 +1,7 @@
+// .footer {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
 .footer .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -5,7 +9,15 @@
 .footer {
   background-color: #2f303a;
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  // display: block;
+  // text-align: center;
+  // display: flex;
+  // align-items: baseline;
 
   &__logo {
     color: var(--accent-color);
@@ -57,10 +69,54 @@
     color: var(--accent-color);
   }
 }
-
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 74px 0 61px;
+    gap: 164px;
+    // align-content: center;
+    // align-items: center;
+  }
+  .footer-form {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__elements {
+    display: flex;
+    flex-direction: row;
+    // justify-content: baseline;
+    align-items: baseline;
+    // align-content: center;
+  }
+  .footer-form {
+    display: flex;
+    justify-content: first baseline;
+    align-items: baseline;
+    margin-top: 0;
+    margin-right: auto;
+  }
+  .join {
+    margin-top: 0;
+  }
+  .footer__wrap {
+    gap: 70px;
+  }
+  .footer-form__button {
+    display: flex;
+    justify-content: baseline;
+  }
+}
 .join {
-  margin-right: 93px;
-  margin-left: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  // margin-right: 93px;
+  // margin-left: 70px;
+  margin-top: 60px;
+  justify-content: center;
 }
 .join__paragraf {
   color: var(--white);
@@ -71,6 +127,8 @@
 }
 .join__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   margin-top: 20px;
 }

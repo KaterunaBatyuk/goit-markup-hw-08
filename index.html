@@ -31,6 +31,25 @@
               <a href="./index.html" class="navigation__link--current"
                 >Студия</a
               >
+              <button
+                type="button"
+                class="header__button is-open"
+                aria-expanded="false"
+                aria-label="Переключатель мобильного меню"
+                data-menu-button
+              >
+                <svg width="40" height="40">
+                  <use
+                    class="header__icon--cross"
+                    href="./img/sprite.svg#icon-cross"
+                  ></use>
+                  <use
+                    class="header__icon--menu"
+                    href="./img/sprite.svg#icon-menu"
+                  ></use>
+                </svg>
+              </button>
+              <div class="container-menu">меню</div>
             </li>
             <li class="navigation__item">
               <a href="./portfolio.html" class="navigation__link">Портфолио</a>
@@ -86,51 +105,49 @@
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="benefit__list">
             <li class="benefit__item">
-              <svg class="benefit__icon">
-                <use href="./img/sprite.svg#icon-antenna-1"></use>
-              </svg>
-            </li>
-            <li class="benefit__item">
-              <svg class="benefit__icon">
-                <use href="./img/sprite.svg#icon-clock-1"></use>
-              </svg>
-            </li>
-            <li class="benefit__item">
-              <svg class="benefit__icon">
-                <use href="./img/sprite.svg#icon-diagram-1"></use>
-              </svg>
-            </li>
-            <li class="benefit__item">
-              <svg class="benefit__icon">
-                <use href="./img/sprite.svg#icon-astronaut-1"></use>
-              </svg>
-            </li>
-          </ul>
-          <ul class="details">
-            <li class="details__item">
-              <h3 class="details__header">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-              <p class="details__paragraph">
+              <div class="benefit__wrapper">
+                <svg class="benefit__icon">
+                  <use href="./img/sprite.svg#icon-antenna-1"></use>
+                </svg>
+              </div>
+              <h3 class="benefit__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+              <p class="benefits__description">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="details__item">
-              <h3 class="details__header">ПУНКТУАЛЬНОСТЬ</h3>
-              <p class="details__paragraph">
+            <li class="benefit__item">
+              <div class="benefit__wrapper">
+                <svg class="benefit__icon">
+                  <use href="./img/sprite.svg#icon-clock-1"></use>
+                </svg>
+              </div>
+              <h3 class="benefit__title">ПУНКТУАЛЬНОСТЬ</h3>
+              <p class="benefits__description">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="details__item">
-              <h3 class="details__header">ПЛАНИРОВАНИЕ</h3>
-              <p class="details__paragraph">
+            <li class="benefit__item">
+              <div class="benefit__wrapper">
+                <svg class="benefit__icon">
+                  <use href="./img/sprite.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
+              <h3 class="benefit__title">ПЛАНИРОВАНИЕ</h3>
+              <p class="benefits__description">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="details__item">
-              <h3 class="details__header">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-              <p class="details__paragraph">
+            <li class="benefit__item">
+              <div class="benefit__wrapper">
+                <svg class="benefit__icon">
+                  <use href="./img/sprite.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
+              <h3 class="benefit__title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+              <p class="benefits__description">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -374,84 +391,90 @@
 
     <footer class="footer">
       <div class="container footer">
-        <div>
-        <a class="footer__logo" href="./index.html"
-          >Web<span class="navigation__logo--s">Studio</span>
-        </a>
-        <address class="adress">
-          <ul class="adress__list">
-            <li class="adress__item">
-              <a
-                href="https://goo.gl/maps/sFrkbbnZgDk9SQtv6"
-                class="adress__link"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="adress__item">
-              <a href="mailtoinfo@devstudio.com" class="adress__contact"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="adress__item">
-              <a href="tel:+380961111111" class="adress__contact"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-      <div class="join">
-        <h3 class="join__paragraf">ПРИСОЕДИНЯЙТЕСЬ</h3>
-        <ul class="join__list">
-          <li class="join__item">
-            <a class="join__link" href="">
-              <svg class="join__icon" width="20" height="20">
-                <use href="./img/sprite.svg#icon-instagram-2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="join__item">
-            <a class="join__link" href="">
-              <svg class="join__icon" width="20" height="20">
-                <use href="./img/sprite.svg#icon-twitter-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="join__item">
-            <a class="join__link" href="">
-              <svg class="join__icon" width="20" height="20">
-                <use href="./img/sprite.svg#icon-facebook-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="join__item">
-            <a class="join__link" href="">
-              <svg class="join__icon" width="20" height="20">
-                <use href="./img/sprite.svg#icon-linkedin-1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div class="footer__elements">
+          <div class="footer__wrap">
+            <div class="footer__adress">
+              <a class="footer__logo" href="./index.html"
+                >Web<span class="navigation__logo--s">Studio</span>
+              </a>
+              <address class="adress">
+                <ul class="adress__list">
+                  <li class="adress__item">
+                    <a
+                      href="https://goo.gl/maps/sFrkbbnZgDk9SQtv6"
+                      class="adress__link"
+                      >г. Киев, пр-т Леси Украинки, 26</a
+                    >
+                  </li>
+                  <li class="adress__item">
+                    <a href="mailtoinfo@devstudio.com" class="adress__contact"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="adress__item">
+                    <a href="tel:+380961111111" class="adress__contact"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
 
-      <!------- Форма в футере ------->
-      <div class="footer-form">
-        <form action="">
-          <h2 class="footer-form__header">Подпишитесь на рассылку</h2>
-          <label class="footer-form__label"></label>
-          <input
-            class="footer-form__input"
-            type="email"
-            name="email"
-            placeholder="E-mail"
-          />
-          <button class="footer-form__button">
-            <span class="footer-form__subscribe"> Подписаться</span>
-            <svg class="footer-form__icon" width="24" height="24">
-              <use href="./img/sprite.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </form>
+            <div class="join">
+              <h3 class="join__paragraf">ПРИСОЕДИНЯЙТЕСЬ</h3>
+              <ul class="join__list">
+                <li class="join__item">
+                  <a class="join__link" href="">
+                    <svg class="join__icon" width="20" height="20">
+                      <use href="./img/sprite.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join__item">
+                  <a class="join__link" href="">
+                    <svg class="join__icon" width="20" height="20">
+                      <use href="./img/sprite.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join__item">
+                  <a class="join__link" href="">
+                    <svg class="join__icon" width="20" height="20">
+                      <use href="./img/sprite.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join__item">
+                  <a class="join__link" href="">
+                    <svg class="join__icon" width="20" height="20">
+                      <use href="./img/sprite.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!------- Форма в футере ------->
+          <div class="footer-form">
+            <form action="">
+              <h2 class="footer-form__header">Подпишитесь на рассылку</h2>
+              <label class="footer-form__label"></label>
+              <input
+                class="footer-form__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <button class="footer-form__button">
+                <span class="footer-form__subscribe"> Подписаться</span>
+                <svg class="footer-form__icon" width="24" height="24">
+                  <use href="./img/sprite.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -516,5 +539,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
