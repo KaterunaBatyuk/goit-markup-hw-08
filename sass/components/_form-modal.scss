@@ -80,9 +80,21 @@
   margin-left: 14px;
   align-items: center;
   margin-top: 20px;
+  // font-weight: 400;
+  // font-size: 12px;
+  // line-height: 1.2;
+  // letter-spacing: 0.03em;
+  // color: var(--title-text-color);
 
-  font-size: 14px;
-  line-height: 1.7;
+  // font-size: 14px;
+  // line-height: 1.7;
+}
+.term__agree {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  // font-size: 14px;
+  // line-height: 1.7;
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
@@ -93,8 +105,10 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.2;
+  // font-size: 14px;
+  // line-height: 24px;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
 

@@ -31,10 +31,12 @@ p {
   list-style-type: none;
 }
 
-a,
 img {
   display: block;
-  text-decoration: none;
   width: 100%;
   height: auto;
+}
+a {
+  display: block;
+  text-decoration: none;
 }
