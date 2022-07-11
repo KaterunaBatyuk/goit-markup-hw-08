@@ -376,6 +376,12 @@ a {
     border-radius: 2px;
   }
 
+  .navigation__main .navigation__link:hover,
+.navigation__main .navigation__link:focus,
+.navigation__main .navigation__link--current {
+    color: var(--accent-color);
+  }
+
   navigation__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -1425,6 +1431,10 @@ a {
     -webkit-box-pack: baseline;
         -ms-flex-pack: baseline;
             justify-content: baseline;
+  }
+
+  .adress__item {
+    text-align: start;
   }
 }
 .join {

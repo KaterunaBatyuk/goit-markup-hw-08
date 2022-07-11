@@ -249,6 +249,11 @@
     background-color: var(--accent-color);
     border-radius: 2px;
   }
+  .navigation__main .navigation__link:hover,
+  .navigation__main .navigation__link:focus,
+  .navigation__main .navigation__link--current {
+    color: var(--accent-color);
+  }
   navigation__item:not(:last-child) {
     margin-bottom: 32px;
     // .navigation__item {
