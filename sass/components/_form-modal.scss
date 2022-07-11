@@ -75,19 +75,14 @@
 
 .term {
   position: relative;
-
   display: flex;
-  margin-left: 14px;
+  width: 100%;
+  // margin-left: 14px;
   align-items: center;
   margin-top: 20px;
-  // font-weight: 400;
-  // font-size: 12px;
-  // line-height: 1.2;
-  // letter-spacing: 0.03em;
-  // color: var(--title-text-color);
-
-  // font-size: 14px;
-  // line-height: 1.7;
+  @media screen and(min-width:1200px) {
+    margin-left: 14px;
+  }
 }
 .term__agree {
   font-weight: 400;

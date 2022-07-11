@@ -9,7 +9,11 @@
 }
 .benefit__item {
   margin-bottom: 30px;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+  }
 }
+
 .benefit__title {
   color: var(--primary-text-color);
   font-weight: 700;
@@ -38,6 +42,7 @@
     display: flex;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .benefit__title {
     text-align: start;
@@ -50,6 +55,12 @@
   .benefit__item {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
+  }
+  .benefit__item:nth-child(4n) {
+    margin-right: 0;
+  }
+  .benefit__item:nth-child(2n + 1) {
+    margin-bottom: 0;
   }
 }
 .benefit__wrapper {

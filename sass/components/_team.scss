@@ -31,6 +31,9 @@
   .team__item:nth-child(2n + 1) {
     margin-right: 30px;
   }
+  .team__item:nth-child(-n + 2) {
+    margin-top: 0;
+  }
   .team__list {
     display: flex;
     flex-wrap: wrap;
@@ -44,6 +47,9 @@
   .team__item {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
+  }
+  .team__item {
+    margin-top: 0;
   }
 }
 
@@ -92,12 +98,6 @@
 }
 .social__item:not(:last-child) {
   margin-right: 10px;
-}
-.social__item:last-child {
-  margin-right: 30px;
-}
-.social__item:first-child {
-  margin-left: 32px;
 }
 .social__link {
   display: flex;
